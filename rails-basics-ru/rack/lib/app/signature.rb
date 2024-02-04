@@ -12,7 +12,7 @@ class Signature
     return [status, headers, body] if body[0].nil? || status == 404
 
     hash = Digest::SHA256.hexdigest(body[0])
-    new_body = body.push(" #{hash}")
+    new_body = body.push("</br>#{hash}")
     [status, headers, new_body]
   end
 end

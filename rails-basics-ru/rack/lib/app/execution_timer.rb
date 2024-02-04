@@ -11,6 +11,6 @@ class ExecutionTimer
     return [status, headers, body] if body[0].nil? || status == 404
 
     time_taken = (1000 * (Time.now - start_time))
-    [status, headers, body.push(" #{time_taken}")]
+    [status, headers, body.push("</br>#{time_taken}")]
   end
 end

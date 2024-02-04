@@ -1,0 +1,8 @@
+Documentation:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Lint/UselessAssignment:
+  Enabled: false
+Lint/UnusedMethodArgument:
+  Enabled: false
